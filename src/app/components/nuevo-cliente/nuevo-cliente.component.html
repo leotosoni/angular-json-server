@@ -1,0 +1,38 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <form (ngSubmit)="newClient()" action="" [formGroup] = 'formulario'>
+                <div class="mb-3">
+                    <h2 class="text-center">Nuevo Cliente</h2>
+                </div>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" formControlName="nombre">
+                </div>
+                <div class="mb-3">
+                   <span *ngIf="validar('nombre', 'required')">
+                    El campo es requerido
+                   </span>
+                </div>
+                <div class="mb-3">
+                   <span *ngIf="validar('nombre', 'minlength')">
+                    Debe ingresar un minimo de 3 caracteres
+                   </span>
+                </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" formControlName="apellido">
+                </div>
+                <div class="mb-3">
+                    <label for="dni" class="form-label">DNI</label>
+                    <input type="text" class="form-control" id="dni" formControlName="dni">
+                </div>
+                <div class="mb-3">
+                    <label for="fechaInicio" class="form-label">Fecha de Inicio</label>
+                    <input type="date" class="form-control" id="fechaInicio" formControlName="fechaInicio">
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>

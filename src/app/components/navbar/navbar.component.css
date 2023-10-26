@@ -1,0 +1,13 @@
+nav{
+    border-bottom: 1px solid rgb(77, 76, 76);
+}
+
+nav ul li:hover {
+    background-color: rgb(18, 2, 97);    
+}
+nav ul li a{
+    color: black;
+}
+nav ul li a:hover{
+    color: white;
+}

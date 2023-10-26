@@ -1,0 +1,25 @@
+{
+  "clientes": [
+    {
+      "nombre": "Leonardo",
+      "apellido": "White",
+      "dni": "33646959",
+      "fechaInicio": "2023-10-19",
+      "id": 1
+    },
+    {
+      "nombre": "Justin",
+      "apellido": "White",
+      "dni": 34589623,
+      "fechaInicio": "2023-10-06",
+      "id": 2
+    },
+    {
+      "nombre": "Marcelo",
+      "apellido": "Lanus",
+      "dni": "45789145",
+      "fechaInicio": "2017-12-02",
+      "id": 3
+    }
+  ]
+}
